@@ -1,10 +1,7 @@
 <template>
   <div>
-    
-    <div class="presentacion"><Carousel2></Carousel2></div>
-    <p></p>
-    <p></p>
-    <p></p>
+    <Carousel2></Carousel2>
+    <br>
     <div class="sintesis_index"><Servicios /></div>
   </div>
 </template>

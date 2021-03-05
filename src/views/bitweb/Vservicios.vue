@@ -4,10 +4,11 @@
 ========================================================================================== -->
 <template>
   <div id="demo-basic-card">
+    
     <div class="vx-row">
       <!-- CARD WITH TABS COMPONENT -->
       <div
-        class="vx-col w-full sm:w-1/2 lg:w-1/3 mb-base"
+        class="vx-col w-full sm:w-1/2 lg:w-1/4 mb-base"
         v-for="(item, index) in publicacionesCortas"
         :key="index"
       >
@@ -26,9 +27,9 @@
             <vs-button
               tag="a"
               type="gradient"
-              color="#7367F0"
-              gradient-color-secondary="#CE9FFC"
-              class="w-full mt-4"
+              color="#147309"
+              gradient-color-secondary="#082b03"
+              class="w-full mt-3"
               >{{ item.detalle }}</vs-button
             >
           </router-link>
@@ -39,7 +40,7 @@
               type="gradient"
               color="#7367F0"
               gradient-color-secondary="#CE9FFC"
-              class="w-full mt-4"
+              class="w-full mt-3"
               >{{ item.detalle }}</vs-button
             >
           </router-link>
