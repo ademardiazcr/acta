@@ -7,9 +7,9 @@
 		        	<div class="row">
 		        		<div class="col-md-4 col-lg-4 footer-about wow fadeInUp">
 		        			<img
-            src="@/assets/images/logo/logo_tavo_horizontal2.png"
+            src="@/assets/images/logo/logo_coopefyl.png"
             width="205"
-            height="40"
+            height="150"
           />
           <br>
           <br>

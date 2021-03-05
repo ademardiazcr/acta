@@ -15,9 +15,9 @@
           class="vx-logo cursor-pointer mx-auto flex items-center"
         >
           <img
-            src="@/assets/images/logo/logo_tavo_horizontal.png"
-            width="210"
-            height="40"
+            src="@/assets/images/logo/logo_coopefyl.png"
+            width="70"
+            height="45"
           />
         </router-link>
 
