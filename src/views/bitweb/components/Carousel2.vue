@@ -81,7 +81,7 @@ export default {
       formatorecibe: "N",
       indicador: "3",
       categoria: this.catSlider,
-    };
+    }; 
     //if (this.getSlider[0].titulo=="0")
     this.$store.dispatch("BitWeb/acDsoaPublicaciones", pedido);
   },
