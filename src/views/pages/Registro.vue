@@ -23,7 +23,7 @@
             <div class="vx-col w-full md:w-2/5 lg:w-1/4 rounded-lg">
                 <vx-card>
                     <h4>Actas de Coopefyl</h4>
-                    <pdf />
+                    
                     <ul class="faq-topics mt-4">
                         <li v-for="category in categories" :key="category.id" class="p-2 font-medium flex items-center" @click="faqFilter = category.id">
                             <div class="h-3 w-3 rounded-full mr-2" :class="'bg-' + category.color"></div><span class="cursor-pointer">{{ category.name }}</span>

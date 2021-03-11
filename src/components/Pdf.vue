@@ -1,17 +1,25 @@
 <template>
-    <div>
-        <input type="checkbox" v-model="show">
-        <select v-model="src" style="width: 30em">
+    <div class="form-inline">
+      <div class="form-group">
+        <label>Mostrar u Ocultar páginas&nbsp;</label>
+        <input type="checkbox" v-model="show">&nbsp;
+        <select v-model="src" style="width: 30em" class="form-control">
             <option v-for="item in pdfList" :value="item" v-text="item"></option>
         </select>
-        <input v-model.number="page" type="number" style="width: 5em"> /{{numPages}}
-        <button @click="rotate += 90">⟳</button>
-        <button @click="rotate -= 90">⟲</button>
-        <button @click="$refs.pdf.print()">print</button>
+        <input v-model.number="page" type="number" style="width: 5em" class="form-control">&nbsp; /&nbsp;{{numPages}}&nbsp;
+      
+
+        <button type="button" class="btn btn-success" @click="rotate += 90">⟳</button>&nbsp;
+         <button type="button" class="btn btn-success" @click="rotate -= 90">⟲</button>&nbsp;
+        
+        <button type="button" class="btn btn-success"  @click="$refs.pdf.print()">imprimir</button>
+        <br><br>
+        </div>
         <div style="width: 100%">
             <div v-if="loadedRatio > 0 && loadedRatio < 1" style="background-color: green; color: white; text-align: center" :style="{ width: loadedRatio * 100 + '%' }">{{ Math.floor(loadedRatio * 100) }}%</div>
-            <pdf v-if="show" ref="pdf" style="border: 1px solid red" :src="src" :page="page" :rotate="rotate" @password="password" @progress="loadedRatio = $event" @error="error" @num-pages="numPages = $event" @link-clicked="page = $event"></pdf>
+            <pdf v-if="show" ref="pdf" style="border: 1px solid blue" :src="src" :page="page" :rotate="rotate" @password="password" @progress="loadedRatio = $event" @error="error" @num-pages="numPages = $event" @link-clicked="page = $event"></pdf>
         </div>
+        
     </div>
 </template>
 <script>
