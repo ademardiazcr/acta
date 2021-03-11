@@ -134,9 +134,9 @@ const router = new Router({
                         breadcrumb: [
                             { title: "Home", url: "/" },
                             { title: "Pages" },
-                            { title: "FAQ", active: true }
+                            { title: "Actas", active: true }
                         ],
-                        pageTitle: "FAQ",
+                        pageTitle: "Actas Coopefyl",
                         rule: "editor"
                     }
                 },

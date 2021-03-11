@@ -13,7 +13,7 @@
         <!-- JUMBOTRON -->
         <div class="faq-jumbotron">
             <div class="faq-jumbotron-content lg:p-32 md:p-24 sm:p-16 p-8 rounded-lg mb-base">
-                <h1 class="mb-1 text-white">Qué esta buscando?</h1>
+                <h1 class="mb-1 text-white">Qué Acta esta buscando?</h1>
                 <p class="text-white">Aqui estan los registros de actas de todas nuestras reuniones. Podría escribir <strong>"Enero del 2020"</strong> por ejm.</p>
                 <vs-input placeholder="Search" v-model="faqSearchQuery" icon-pack="feather" icon="icon-search" size="large" class="w-full mt-6" icon-no-border />
             </div>
@@ -114,7 +114,7 @@ export default{
         },
         {
           id: 4,
-          categoryId: 2,
+          categoryId: 3,
           question: 'Acta - Diciembre del 2020',
           ans: 'Non-exclusive means that you are not the only person with access to the item. Others will also be licensing and using the same item.'
         },
@@ -144,32 +144,62 @@ export default{
         },
         {
           id: 9,
-          categoryId: 4,
+          categoryId: 3,
           question: 'Acta - Julio del 2020',
           ans: 'Yes. If you purchased a single-use license, access should only be given to people working on the single end product incorporating that item.'
         },
         {
           id: 10,
-          categoryId: 4,
+          categoryId: 3,
           question: 'Acta - Junio del 2020',
           ans: 'No, items must be stored in a location where only those who need them have access. If you purchased a single-use license, once the item has been used in a single end product, the only place you should store it is in the archive files for that end product.'
         },
         {
           id: 11,
-          categoryId: 5,
+          categoryId: 3,
           question: 'Acta - Mayo del 2020',
           ans: 'No. This only applies to items with real-world products and trademarks in the actual item. This is most likely in product mock-ups (graphics items), product promos (motion graphics project files) and 3D items. This does not apply to PhotoDune items, which are available for commercial use. This also does not apply to images of products and trademarks used illustratively in item previews, as they\'re not included in the item you download.'
         },
         {
           id: 12,
-          categoryId: 5,
+          categoryId: 3,
           question: 'Acta - Abril del 2020',
           ans: 'Editorial use means using an item only for news or journalistic purposes like in blogs, magazine and newspaper editorial applications.'
         },
         {
           id: 13,
-          categoryId: 5,
+          categoryId: 3,
           question: 'Acta - Marzo del 2020',
+          ans: 'Yes. Royalty free means you pay for the item once for each end product, and you don\'t need to pay any additional or ongoing fees for each person who sees or uses it. This is separate to whether you need a clearance from the owner of rights in the real world product or trademark within an item.'
+        },
+        {
+          id: 14,
+          categoryId: 3,
+          question: 'Acta - Febrero del 2020',
+          ans: 'Yes. Royalty free means you pay for the item once for each end product, and you don\'t need to pay any additional or ongoing fees for each person who sees or uses it. This is separate to whether you need a clearance from the owner of rights in the real world product or trademark within an item.'
+        },
+        {
+          id: 15,
+          categoryId: 3,
+          question: 'Acta - Enero del 2020',
+          ans: 'Yes. Royalty free means you pay for the item once for each end product, and you don\'t need to pay any additional or ongoing fees for each person who sees or uses it. This is separate to whether you need a clearance from the owner of rights in the real world product or trademark within an item.'
+        },
+        {
+          id: 16,
+          categoryId: 4,
+          question: 'Acta - Diciembre del 2019',
+          ans: 'Yes. Royalty free means you pay for the item once for each end product, and you don\'t need to pay any additional or ongoing fees for each person who sees or uses it. This is separate to whether you need a clearance from the owner of rights in the real world product or trademark within an item.'
+        },
+        {
+          id: 17,
+          categoryId: 4,
+          question: 'Acta - Noviembre del 2019',
+          ans: 'Yes. Royalty free means you pay for the item once for each end product, and you don\'t need to pay any additional or ongoing fees for each person who sees or uses it. This is separate to whether you need a clearance from the owner of rights in the real world product or trademark within an item.'
+        },
+        {
+          id: 18,
+          categoryId: 4,
+          question: 'Acta - Octubre del 2019',
           ans: 'Yes. Royalty free means you pay for the item once for each end product, and you don\'t need to pay any additional or ongoing fees for each person who sees or uses it. This is separate to whether you need a clearance from the owner of rights in the real world product or trademark within an item.'
         }
       ],
