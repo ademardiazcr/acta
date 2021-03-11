@@ -208,6 +208,11 @@ const actions = {
     // DIVISOFT
     // ////////////////////////////////////////////
 
+    async setDirectivo({ commit, state }, pet) {
+        
+        commit('MUT_DIRECTIVO',  pet);
+    },
+
     /// llama a Solicitud de Datos
     async acDsoa({ commit, state }, pet) {
         const datos = state.peticion;

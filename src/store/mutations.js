@@ -64,6 +64,7 @@ const mutations = {
 
     // Navbar-Vertical
 
+
     ARRANGE_STARRED_PAGES_LIMITED(state, list) {
         const starredPagesMore = state.starredPages.slice(10)
         state.starredPages = list.concat(starredPagesMore)
@@ -125,6 +126,11 @@ const mutations = {
     /// DIVISOFT DIVISOFT DIVISOFT DIVISOFT DIVISOFT //
     //////////////////////////////////////////////////
 
+    MUT_DIRECTIVO(state, directivo) {
+
+        //  console.log('Mut - fila seleccionada ', FilaSelected)
+        state.directivo=directivo;
+    },
     //// MUT
     MUTSETSELECTED(state, FilaSelected) {
         //  console.log('Mut - fila seleccionada ', FilaSelected)

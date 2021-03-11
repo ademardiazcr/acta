@@ -110,6 +110,38 @@ const router = new Router({
                 },
 
                 {
+                    path: "/pruebas",
+                    name: "pruebas",
+                    component: () =>
+                        import ("./views/bitweb/Vpruebas.vue"),
+                    meta: {
+                        breadcrumb: [
+                            { title: "Home", url: "/" },
+                            { title: "Páginas" },
+                            { title: "Quienes Somos", active: true }
+                        ],
+                        pageTitle: "Pruebas",
+                        rule: "editor"
+                    }
+                },
+
+                {
+                    path: "/pages/registro",
+                    name: "page-faq",
+                    component: () =>
+                        import ("@/views/pages/Registro.vue"),
+                    meta: {
+                        breadcrumb: [
+                            { title: "Home", url: "/" },
+                            { title: "Pages" },
+                            { title: "FAQ", active: true }
+                        ],
+                        pageTitle: "FAQ",
+                        rule: "editor"
+                    }
+                },
+
+                {
                     path: "/Solicitarpedido",
                     name: "pedidos",
                     component: () =>
@@ -852,11 +884,11 @@ const router = new Router({
                         import ("@/views/pages/user-settings/UserSettings.vue"),
                     meta: {
                         breadcrumb: [
-                            { title: "Home", url: "/" },
-                            { title: "Pages" },
-                            { title: "User Settings", active: true }
+                            { title: "Inicio", url: "/" },
+                            { title: "Junta Directiva" },
+                            { title: "Directores de la Junta Directiva", active: true }
                         ],
-                        pageTitle: "Settings",
+                        pageTitle: "Junta Directiva",
                         rule: "editor"
                     }
                 },

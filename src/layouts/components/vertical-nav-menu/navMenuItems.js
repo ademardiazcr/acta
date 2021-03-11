@@ -30,38 +30,52 @@ export const menuVisitante = [{
         icon: "HomeIcon",
     },
 
-    {
-        url: "/acercade",
-        name: "Quienes Somos",
-        slug: "acercade",
-        icon: "UserIcon",
+    // {
+    //     url: "/acercade",
+    //     name: "Quienes Somos",
+    //     slug: "acercade",
+    //     icon: "UserIcon",
 
-    },
-    {
-        url: "/oficinas",
-        name: "Oficinas",
-        slug: "oficinas",
-        icon: "MapIcon",
-    },
-    {
-        url: "/servicios",
-        name: "Servicios",
-        slug: "servicios",
-        icon: "GlobeIcon",
-    },
+    // },
+    // {
+    //     url: "/oficinas",
+    //     name: "Oficinas",
+    //     slug: "oficinas",
+    //     icon: "MapIcon",
+    // },
+    // {
+    //     url: "/servicios",
+    //     name: "Servicios",
+    //     slug: "servicios",
+    //     icon: "GlobeIcon",
+    // },
 
-    {
-        url: "/admin/solicitud/0/VerifyKey/0",
-        name: "Mis Pedidos",
-        slug: "SOLICITUD_PEDIDO",
-        icon: "TruckIcon",
-    },
+    // {
+    //     url: "/admin/solicitud/0/VerifyKey/0",
+    //     name: "Mis Pedidos",
+    //     slug: "SOLICITUD_PEDIDO",
+    //     icon: "TruckIcon",
+    // },
 
     
 
+    // {
+    //     url: "/pages/login",
+    //     name: "Iniciar Sesión",
+    //     slug: "page-login",
+    //     icon: "LogInIcon",
+    // },
+
     {
-        url: "/pages/login",
-        name: "Iniciar Sesión",
+        url: "/pruebas",
+        name: "Pruebas",
+        slug: "page-login",
+        icon: "LogInIcon",
+    },
+
+    {
+        url: "/pages/user-settings",
+        name: "Directorio",
         slug: "page-login",
         icon: "LogInIcon",
     },
@@ -256,6 +270,7 @@ export const menuAdmin = [{
         slug: "lista-usuarios",
         icon: "UserIcon",
     },
+    
     {
         url: "/pages/login",
         name: "Iniciar Sesión",

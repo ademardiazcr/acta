@@ -66,6 +66,7 @@ const is_touch_device = () => {
 // /////////////////////////////////////////////
 
 const state = {
+
   AppActiveUser: getUserInfo(),
   bodyOverlay: false,
   isVerticalNavMenuActive: true,
@@ -154,6 +155,14 @@ const state = {
       M: "",
       S: "",
     },
+  },
+
+  directivo:{
+      nombre:"Steven  Paul Jobs DESDE STATE",
+    cargo:"Presidente",
+    contenido:"San Francisco, California; 24 de febrero de 1955-Palo Alto, California; 5 de octubre de 2011),8​9​10​11​ más conocido como Steve Jobs, fue un empresario y magnate de los negocios en el sector informático y de la industria del entretenimiento estadounidense. Fue cofundador y presidente ejecutivo de Apple12​ y máximo accionista individual de The Walt Disney Company.13",
+    urlphoto:"https://media.metrolatam.com/2018/01/23/stevejobs-600x400.jpg"
+    
   },
 
   //// DIVISOFT MULTIMEDIA  MULTIMEDIA MULTIMEDIA MULTIMEDIA MULTIMEDIA MULTIMEDIA MULTIMEDIA

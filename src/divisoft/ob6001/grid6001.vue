@@ -170,7 +170,7 @@ export default {
     },
     computed: {
         ...mapState([ 
-      "profile",
+            "profile",
             "rowsForm", 
             "selectedRow",
             "rows", 
@@ -380,7 +380,7 @@ export default {
                 dml: "JJ",
                Credencial: this.getProfile.Credencial ,
                 ObjectId:"6001",
-                formatoenvio: "N",
+                formatoenvio: "N", 
                 formatorecibe: "N",
                 indicador: "1", //select
                 origenUrl: origenUrl
