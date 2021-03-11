@@ -73,9 +73,18 @@ export const menuVisitante = [{
         icon: "LogInIcon",
     },
 
+    
+
     {
         url: "/pages/user-settings",
         name: "Directorio",
+        slug: "page-login",
+        icon: "LogInIcon",
+    },
+
+    {
+        url: "/pages/registro",
+        name: "Actas",
         slug: "page-login",
         icon: "LogInIcon",
     },
