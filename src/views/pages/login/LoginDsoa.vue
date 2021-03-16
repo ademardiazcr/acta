@@ -21,7 +21,8 @@
       <img src="@/assets/images/logo/logo_solo_divisoft.svg" id="icon" alt="User Icon" />
     </div>
     <hr><br>
-    <h3>Administrador Coopefyl</h3>
+    <h4>Administrador Coopefyl</h4 >
+    
     <br>
     <input
       v-validate="'required|min:1'"
@@ -316,6 +317,9 @@ export default {
 .disabled {
   pointer-events: none;
   opacity: 0.6;
+}
+#titulo{
+  color:black;
 }
 
 </style>
