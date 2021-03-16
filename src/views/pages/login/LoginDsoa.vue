@@ -5,7 +5,9 @@
 ========================================================================================== -->
 
 <template>
-  <div >
+  <div class="wrapper fadeInDown">
+    <br><br><br><br><br>
+  <div id="formContent">
     
 
     <vs-alert :active="inputValid" :color="AlertColor" class="text-dark mt-5">
@@ -13,7 +15,15 @@
     </vs-alert>
     <br>
 
-    <vs-input
+    <form>
+      <div class="fadeIn first">
+        <br>
+      <img src="@/assets/images/logo/logo_solo_divisoft.svg" id="icon" alt="User Icon" />
+    </div>
+    <hr><br>
+    <h3>Administrador Coopefyl</h3>
+    <br>
+    <input
       v-validate="'required|min:1'"
       data-vv-validate-on="blur"
       name="email"
@@ -22,11 +32,13 @@
       icon-pack="feather"
       label-placeholder="Usuario"
       v-model="username"
-      class="w-full"
+      type="text"
+      placeholder="login"
     />
+    <br>
     <span class="text-danger text-sm">{{ errors.first("email") }}</span>
     <br />
-    <vs-input
+    <input
       data-vv-validate-on="blur"
       v-validate="'required|min:1|max:15'"
       type="password"
@@ -36,28 +48,30 @@
       icon-pack="feather"
       label-placeholder="Contraseña"
       v-model="password"
-      class="w-full mt-6"
       v-on:change="onchangeConsiguePass"
+      placeholder="password"
     />
+    <br>
     <span class="text-danger text-sm">{{ errors.first("password") }}</span>
+    <br>
+    <input type="submit" class="fadeIn fourth" :disabled="!validateForm" @click="inicioSesionPrevia('L')" value="Ingresar">
 
-    <div class="flex flex-wrap justify-between my-5">
-      <vs-button
+    <div id="formFooter">
+      <input
         v-show="username"
         :disabled="!validateUsername"
         @click="inicioSesion('U')"
         color="rgb(11, 189, 135)"
-        type="flat"
-        >Olvidó su Contraseña</vs-button
-      >
+        type="submit"
+        class="underlineHover"
+        >Olvidó su Contraseña &nbsp;&nbsp;
+        <a href="" type="border" @click="registerUser">Registrarse</a>
     </div>
-
-    <div class="flex flex-wrap justify-between mb-3">
-      <vs-button type="border" @click="registerUser">Registrarse</vs-button>
-      <vs-button :disabled="!validateForm" @click="inicioSesionPrevia('L')"
-        >Ingresar</vs-button
-      >
-    </div>
+    
+   
+     </form>
+      
+  </div>
   </div>
 </template>
 

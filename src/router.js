@@ -1111,6 +1111,16 @@ const router = new Router({
                 },
 
                 {
+                    path: "/pages/login2",
+                    name: "page-login2",
+                    component: () =>
+                        import ("@/views/pages/login/Login2.vue"),
+                    meta: {
+                        rule: "editor"
+                    }
+                },
+
+                {
                     path: "/pages/forgot-password",
                     name: "page-forgot-password",
                     component: () =>
